@@ -1,2 +1,4 @@
 # Python_Basic
 Lean python
+Tự học python basics 
+Link tài liệu tham khảo: https://doc.python.org
