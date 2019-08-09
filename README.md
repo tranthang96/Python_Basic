@@ -1,2 +1,2 @@
 # Python_Basic
-Lean pyton
+Lean python
