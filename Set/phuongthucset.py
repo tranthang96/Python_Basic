@@ -35,6 +35,6 @@ b = a.copy()
 a.add(4)
 print(a)
 # =========Set không phải là một hash object=====
-print(id(a))
+print(id(a))			#cùng 1 giá trị
 a.add(5)
-print(id(a))
+print(id(a))            #cùng giá trị trên 

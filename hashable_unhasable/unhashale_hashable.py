@@ -31,7 +31,7 @@ tìm chỗ mới thoáng có đủ khoảng trống.
 #======================
 #Còn với unhash object. Là một đối tượng bạn thay đổi được nội dung, vì thế, 
 Python luôn xin dư bộ nhớ để chừa chỗ cho các giá trị tiếp theo bạn có thể thêm vào. 
-Trong bài trước, Kteam đã đề cập đến việc Tuple chiếm ít dung lượng hơn 
+đã đề cập đến việc Tuple chiếm ít dung lượng hơn 
 List vì Tuple là hash object
 """
 
