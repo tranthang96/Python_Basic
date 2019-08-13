@@ -69,3 +69,29 @@ print(value)
 print(dic)  # {'name': 'Thang', 'member': 96, 'sffasff': None}
 value = dic.setdefault("aaaaaa","gia tri moi") 
 print(dic) #{'name': 'Thang', 'member': 96, 'sffasff': None, 'aaaaaa': 'gia tri moi'}
+
+#==== Phương thức update=====
+# cú pháp: <D>.update([E,]**F)
+	#Phương thức giúp bạn cập nhật nội dung cho Dict.
+	#F là một Dict được tạo thành bởi packing arguments
+#update theo kiểu sử dụng packing arguments.
+d = {'a': 1}
+print(d)
+d.update(b=2,c=3)
+print(d) # {'a': 1, 'b': 2, 'c': 3}
+# update theo truyền E với E là một đối  tượng có phương thức keys
+d = {'a': 1}
+E = {'b': 2, 'c': 3}
+d.update(E)
+print(d) #{'a': 1, 'b': 2, 'c': 3}
+# truyền vào một E với  E có các giá chứa hai giá trị
+d = {'a': 1}
+E = [('b', 2), ('c', 3)]
+d.update(E)         #{'a': 1, 'b': 2, 'c': 3}
+E_f = (['d', 69], ['e', 96])
+d.update(E_f)
+print(d)            #{'a': 1, 'b': 2, 'c': 3, 'd': 69, 'e': 96}
+# update giá trị cùng key
+E_g = (["d",234],['e',"Thang"])
+d.update(E_g)
+print(d)           #{'a': 1, 'b': 2, 'c': 3, 'd': 234, 'e': 'Thang'}
