@@ -1,0 +1,13 @@
+sửa lỗi everythig ... khi push
+
+Điều này đã xảy ra với tôi khi ứng dụng SourceTree của tôi bị sập trong quá trình dàn dựng. Và trên dòng lệnh, có vẻ như trước đó git addđã bị hỏng. Nếu đây là trường hợp, hãy thử:
+
+git init
+git add -A
+git commit -m 'Fix bad repo'
+git push
+
+
+Hoặc
+
+ git push --all origin
